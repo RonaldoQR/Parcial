@@ -1,0 +1,4 @@
+create database Moqzilla;
+use Moqzilla;
+create table papeleta (dni varchar(8) primary key unique, multa varchar(50), monto numeric(8,2));
+insert into papeleta values ('76930397','Luz roja',300);

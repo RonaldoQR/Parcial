@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.1" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd">
+    <servlet>
+        <servlet-name>AgregarServlet</servlet-name>
+        <servlet-class>servlets.AgregarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Consulta</servlet-name>
+        <servlet-class>servlets.Consulta</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>EliminarServlet</servlet-name>
+        <servlet-class>servlets.EliminarServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>Multa</servlet-name>
+        <servlet-class>servlets.Multa</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AgregarServlet</servlet-name>
+        <url-pattern>/AgregarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Consulta</servlet-name>
+        <url-pattern>/Consulta</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>EliminarServlet</servlet-name>
+        <url-pattern>/EliminarServlet</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>Multa</servlet-name>
+        <url-pattern>/Multa</url-pattern>
+    </servlet-mapping>
+    <session-config>
+        <session-timeout>
+            30
+        </session-timeout>
+    </session-config>
+</web-app>
